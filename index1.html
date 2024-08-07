@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js"></script>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c1ff87;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li a {
+    color:blue;
+    text-decoration: none;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 2em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 500px;
+    padding: 33px;
+    width: 336px;
+}
+
+input, button {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 0;
+    
+}
+li:hover{
+    background-color: aqua;
+}
+
+li {
+    margin-bottom: 1em;
+    padding: 1em;
+  
+    border-radius: 5px;
+    
+    
+    text-align: center;
+    align-items: center;
+}
+
+
+li span {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+#pgLocations ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pgLocations ul li {
+    flex: 1 1 200px;
+    margin: 1em;
+    background-color: #e7e7e7;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.roomImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+marquee{
+    color: white;
+    background-color: #ef0f0f;
+    height: 30px;
+    
+}
+#section{
+    margin: 100px;
+}
+.footer{
+    margin-left: 550px;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <div class="logo">
+                <img src="RK & Co..png" alt="PG Booking Logo">
+            </div>
+            <div class="li1">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Customer</a></li>
+                <li><a href="index2.html">Owner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <marquee behavior="" direction="">"Experience unparalleled comfort in our guest rooms!" "Luxury and affordability, all in one place!" "Your home away from home – reserve your stay today!"   "Make your stay unforgettable with our premium services!"</marquee>
+</ul>
+    
+    <section id="customer">
+        <h2>Customer Section</h2>
+        <div id="bookings">
+            <h3>Available Rooms</h3>
+            <ul id="roomList"></ul>
+        </div>
+        <div id="bookingFormSection">
+            <h3>Book a Room</h3>
+            <form id="bookingForm">
+                <input type="text" id="customerName" placeholder="Customer Name" required>
+                <input type="text" id="roomNameBooking" placeholder="Room Name" required>
+                <input type="date" id="startDate" required>
+                <input type="date" id="endDate" required>
+                <button type="submit">Book Room</button>
+            </form>
+        </div>
+    </section><hr>
+    <div class="footer">
+    <h4>AboutUs | Privacy and Cookies Statement </h4>
+<footer>Copyright &copy; 2024 RK & Co Guest Room Booking </footer>
+</div>
+</body>
+</html>
